@@ -1,0 +1,355 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.menu{
+    display: inline-block;
+    padding: 0 .2em;
+}
+
+.option{
+    margin-bottom: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color:rgb(33,37,41);
+}
+
+.navbar{
+    padding-bottom: 1rem;
+    /*background-color: red;*/
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1.5rem;
+}
+
+.logo{
+    display:flex;
+    padding: 0 1em;
+    justify-items: center;    
+}
+
+.logoNav{
+    width: calc(1.275rem + .3vw);
+    margin-right: .5rem;
+    width: 40px;
+    height: 32px;
+}
+
+.logoFooter{
+    width: 24px;
+    height: 19px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.cdescription{
+    padding: 1em 1em 2em 1em;
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.cdescription h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.cdescription p{
+    color: #6c757d;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.groupCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.cCard{
+    padding: 0 calc(1.5rem * .5);
+    width: 33.3333%;
+    margin-bottom: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 2px 4px rgba(0,0,0,.1) ;
+}
+
+.blue-border{
+    border: 1px solid #0d6efd;
+}
+
+.cardHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem 0;
+    background-color: rgba(0,0,0,.03);
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.cardHeader h4{
+    font-size: 1.5rem;
+}
+
+.enterprise{
+    background-color: #0d6efd;
+    color: rgba(255,255,255,1)
+
+}
+
+.cardBody h1{
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.cardBody{
+    padding: 1rem 1rem;
+    flex: 1 1 auto;
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+small{
+    color: #6c757d;
+    font-weight: 300;
+}
+
+.cardBody button{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    font-size: 1.25rem;
+    
+}
+
+button.free{
+    color: #0d6efd;
+    border-color: #0d6efd;
+    background-color: transparent;
+}
+
+
+.buttonBlue:hover{
+    background-color: #0947a5;
+    transition: background-color .5s;
+}
+
+.free:hover{
+    background-color: #0d6efd;
+    transition: background-color .5s;
+    color:#fff;
+}
+
+ul {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: #212529;
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    font-weight: 400;
+}
+
+.subtittle {
+    display:block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+th{
+    padding: 0.5rem;
+}
+
+.tableTittle{
+    width: 22%;
+    padding: .5em;
+}
+
+.tableTittle0{
+    width: 34%;
+    padding: .5em;
+}
+
+tr {
+    border-top: #dee2e6 1px solid;
+  }
+
+  thead tr{
+      border-top: transparent;
+  }
+
+  tbody {
+    border-top: #dee2e6 1px solid;
+    border-top: 2px solid currentColor;
+  }
+
+  footer{
+      padding-top: 3rem;
+      margin: 3rem 0;
+      border-top: 1px solid rgb(222, 226, 230);
+  }
+
+  .cfooter {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+  }
+
+  .cfooter div{
+      width: 25%;
+      text-align: left;
+      color: #6c757d;
+      font-weight: bold;
+      line-height: 1.4;
+      font-size: .875em;
+  }
+
+  .footerOptions{
+      text-decoration: none;
+      color: #6c757d;
+  }
+
+  .bold{
+    font-weight: bold;    
+  }
+
+  .left{
+    text-align: left;
+  }
+
+  .cfooter div h5{
+    text-align: left;
+    color: black;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.cfooter div i{
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+  .cfooter div ul{
+    text-align: left;
+    font-size: 1rem; 
+    color: #6c757d;
+    font-weight: 100;
+  }
+
+  li{
+    margin-bottom: .25rem;
+  }
+
+  .check{
+      font-size: 1.3rem;
+  }
+
+@media (max-width: 768px){
+
+.navbar{
+    flex-direction: column;
+    padding-bottom: 1rem;
+    margin-bottom:  1.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.cCard{
+    padding: 0 calc(1.5rem * .5);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.cmenu{
+    margin-top: .5rem;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+}
+
+@media (max-width: 1200px){
+
+
+.subtittle {
+    display:block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: calc(1.275rem + .3vw);
+    line-height: 1.5;
+}
+
+}
